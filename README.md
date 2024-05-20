@@ -1,19 +1,19 @@
 <h1>Text Sentiment Analysis</h1>
 
 <h3>Overview</h3>
-This repository contains code for a sentiment analysis model trained on text data. The model predicts whether a given text sentiment is positive, negative, or neutral. It utilizes the AdaBoostClassifier algorithm with a DecisionTreeClassifier base estimator.
+This repository contains code for a sentiment analysis model trained on text data. The model predicts whether a given text sentiment is  ( empty, happiness, sadness, worry, surprise, hate, fun, relief, neutral, anger, boredom, enthusiasm, love ). It utilizes the AdaBoostClassifier algorithm with a DecisionTreeClassifier base estimator.
 
 <h3>Dataset </h3>
 The model was trained on a dataset obtained from Kaggle which is also available in this repository, which consists of text data labeled with sentiment categories. The original dataset contained the following columns:
 <ul>
 <li><b>`tweet_id`</b> : Unique identifier for each tweet</li>
-<li><b>`sentiment`</b> : Categorical sentiment label (e.g., happiness, sadness, anger, etc.)</li>
+<li><b>`sentiment`</b> : Categorical sentiment label  ( empty, happiness, sadness, worry, surprise, hate, fun, relief, neutral, anger, boredom, enthusiasm, love )</li>
 <li><b>`content`</b> : Textual content of the tweet </li>  
 </ul>
 
 We processed this dataset to create the following columns:
 <ul>
-<li><b>`sentiment_category`</b> : Target sentiment category (positive, negative, neutral)</li>
+<li><b>`sentiment_category`</b> : snall sentiment category (positive, negative, neutral)</li>
 <li><b>`neg_score`, `neu_score`, `pos_score`</b> : generated using NLTK sentiment analysis tools. </li>
 </ul>
 
